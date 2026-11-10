@@ -1,21 +1,21 @@
-
-
 nav {
     background-color: darkblue;
     padding: 10px;
 }
+
 nav a {
     color: white;
     display: block;
     padding: 20px;
 }
+
 h1 {
-    /* background-color: darkblue; */
     color: white;
     color: darkblue;
     padding: 16px;
     text-align: center;
 }
+
 img {
     width: 150px;
     height: auto;
@@ -24,9 +24,7 @@ img {
     box-shadow: 0 0 30px gray;
 
 }
+
 p {
     padding: 10px;
-}
-.vertu {
-        background-color: rgb(250, 227, 225);
 }
