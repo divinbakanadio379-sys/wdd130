@@ -1,37 +1,50 @@
-:root {
-    --primary-color: #0a4d68;
-    --secondary-color: #088f8f;
-    --accent-color: #f2a007;
-    --text-color: #333;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #0a4d68;
+    --secondary-color: #088f8f;
+    --accent1-color: #264653;
+    --accent2-color: #29c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
 header {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
     background-color: var(--primary-color);
-    padding: 10px;
 }
 
-header img {
-    width: 100px;
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
 }
 
-nav a {
-    color: white;
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia {
     text-decoration: none;
-    padding: 10px;
 }
 
 .hero {
@@ -42,38 +55,36 @@ nav a {
     display: block;
     width: 100%;
     height: auto;
+
 }
 
-.hero h1 {
+h1 {
     position: absolute;
     top: 20px;
-    left: 0;
-    right: 0;
+    width: 100%;
+    padding: 16px;
     text-align: center;
-    background-color: rgb(0 0 0 / 60%);
-    color: white;
-    padding: 10px;
+    opacity: .7;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
-.hero article {
+article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgb(255 255 255 / 85%);
-    padding: 15px;
+    top: 6.3rem;
+    padding: 10px;
+    color: #fff;
+}
+
+article p {
+    margin: 10px;
+    padding-top: 25px;
 }
 
 .hero article img {
     float: right;
-    width: 150px;
-    margin-left: 15px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
+    width: 125px;
+    border: none;
+    box-shadow: 0 0 10px var(--primary-color);
+    margin: 5px;
 }
