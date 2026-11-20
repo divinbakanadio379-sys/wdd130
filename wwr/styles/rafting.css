@@ -35,6 +35,12 @@ h2 {
     color: var(--secondary-color);
 }
 
+h2 {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
 nav,
 p,
 section,
@@ -71,20 +77,21 @@ h1 {
 
 article {
     position: absolute;
-    top: 6.3rem;
-    padding: 10px;
+    top: 10rem;
     color: #fff;
+    opacity: .7;
 }
 
 article p {
-    margin: 10px;
-    padding-top: 25px;
+    background-color: #264653;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 50px;
     border: none;
     box-shadow: 0 0 10px var(--primary-color);
-    margin: 5px;
+    /* margin: 5px; */
+    margin-top: 27px;
+    margin-right: 20px;
 }
